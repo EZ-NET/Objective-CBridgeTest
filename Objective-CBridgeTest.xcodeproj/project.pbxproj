@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B1956A821D2E0E6A002CE8AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A811D2E0E6A002CE8AE /* AppDelegate.swift */; };
-		B1956A841D2E0E6A002CE8AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A831D2E0E6A002CE8AE /* ViewController.swift */; };
 		B1956A861D2E0E6A002CE8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1956A851D2E0E6A002CE8AE /* Assets.xcassets */; };
-		B1956A891D2E0E6A002CE8AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1956A871D2E0E6A002CE8AE /* Main.storyboard */; };
 		B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A901D2E0E74002CE8AE /* Swift.swift */; };
 		B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A941D2E0E99002CE8AE /* ObjectiveC.m */; };
 		B1956A971D2E0FFD002CE8AE /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A961D2E0FFD002CE8AE /* Test.m */; };
+		B1956A9E1D2E28C2002CE8AE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A9D1D2E28C2002CE8AE /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1956A7E1D2E0E6A002CE8AE /* Objective-CBridgeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective-CBridgeTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1956A811D2E0E6A002CE8AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1956A831D2E0E6A002CE8AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1956A851D2E0E6A002CE8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B1956A881D2E0E6A002CE8AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1956A8A1D2E0E6A002CE8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1956A901D2E0E74002CE8AE /* Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 		B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgeTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -31,6 +26,7 @@
 		B1956A981D2E1058002CE8AE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		B1956A9A1D2E283B002CE8AE /* by-protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-protocol.playground"; sourceTree = "<group>"; };
 		B1956A9C1D2E2871002CE8AE /* by-objc-bridgei.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-objc-bridgei.playground"; sourceTree = "<group>"; };
+		B1956A9D1D2E28C2002CE8AE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +60,13 @@
 		B1956A801D2E0E6A002CE8AE /* Objective-CBridgeTest */ = {
 			isa = PBXGroup;
 			children = (
-				B1956A811D2E0E6A002CE8AE /* AppDelegate.swift */,
-				B1956A831D2E0E6A002CE8AE /* ViewController.swift */,
+				B1956A9D1D2E28C2002CE8AE /* main.swift */,
 				B1956A901D2E0E74002CE8AE /* Swift.swift */,
 				B1956A931D2E0E99002CE8AE /* ObjectiveC.h */,
 				B1956A941D2E0E99002CE8AE /* ObjectiveC.m */,
 				B1956A981D2E1058002CE8AE /* Test.h */,
 				B1956A961D2E0FFD002CE8AE /* Test.m */,
 				B1956A851D2E0E6A002CE8AE /* Assets.xcassets */,
-				B1956A871D2E0E6A002CE8AE /* Main.storyboard */,
 				B1956A8A1D2E0E6A002CE8AE /* Info.plist */,
 				B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */,
 			);
@@ -151,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1956A861D2E0E6A002CE8AE /* Assets.xcassets in Resources */,
-				B1956A891D2E0E6A002CE8AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,25 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1956A971D2E0FFD002CE8AE /* Test.m in Sources */,
-				B1956A841D2E0E6A002CE8AE /* ViewController.swift in Sources */,
+				B1956A9E1D2E28C2002CE8AE /* main.swift in Sources */,
 				B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */,
 				B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */,
-				B1956A821D2E0E6A002CE8AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B1956A871D2E0E6A002CE8AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1956A881D2E0E6A002CE8AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B1956A8B1D2E0E6A002CE8AE /* Debug */ = {
