@@ -24,9 +24,9 @@
 		B1956A941D2E0E99002CE8AE /* ObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC.m; sourceTree = "<group>"; };
 		B1956A961D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowDoSwiftAPISeenTest.m; sourceTree = "<group>"; };
 		B1956A981D2E1058002CE8AE /* HowDoSwiftAPISeenTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HowDoSwiftAPISeenTest.h; sourceTree = "<group>"; };
-		B1956A9A1D2E283B002CE8AE /* by-protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-protocol.playground"; sourceTree = "<group>"; };
-		B1956A9C1D2E2871002CE8AE /* by-objc-bridgei.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-objc-bridgei.playground"; sourceTree = "<group>"; };
 		B1956A9D1D2E28C2002CE8AE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B1956AA01D2E2D4F002CE8AE /* by-objc-bridgei.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "by-objc-bridgei.playground"; path = "Objective-CBridgeTest/by-objc-bridgei.playground"; sourceTree = "<group>"; };
+		B1956AA11D2E2D4F002CE8AE /* by-protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "by-protocol.playground"; path = "Objective-CBridgeTest/by-protocol.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 		B1956A991D2E282D002CE8AE /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				B1956A9A1D2E283B002CE8AE /* by-protocol.playground */,
-				B1956A9C1D2E2871002CE8AE /* by-objc-bridgei.playground */,
+				B1956AA01D2E2D4F002CE8AE /* by-objc-bridgei.playground */,
+				B1956AA11D2E2D4F002CE8AE /* by-protocol.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
