@@ -6,10 +6,10 @@
 //  Copyright © 2016 EasyStyle G.K. All rights reserved.
 //
 
-#import "Test.h"
+#import "HowDoSwiftAPISeenTest.h"
 #import "Objective_CBridgeTest-Swift.h"
 
-@implementation ESTest
+@implementation ESHowDoSwiftAPISeenTest
 
 + (void)test
 {

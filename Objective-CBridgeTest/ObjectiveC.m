@@ -27,7 +27,3 @@
 @implementation ESChartFolder
 
 @end
-
-@implementation ESPatientDataObject
-
-@end

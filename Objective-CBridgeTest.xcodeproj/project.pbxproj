@@ -10,7 +10,7 @@
 		B1956A861D2E0E6A002CE8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1956A851D2E0E6A002CE8AE /* Assets.xcassets */; };
 		B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A901D2E0E74002CE8AE /* Swift.swift */; };
 		B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A941D2E0E99002CE8AE /* ObjectiveC.m */; };
-		B1956A971D2E0FFD002CE8AE /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A961D2E0FFD002CE8AE /* Test.m */; };
+		B1956A971D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A961D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m */; };
 		B1956A9E1D2E28C2002CE8AE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A9D1D2E28C2002CE8AE /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,8 +22,8 @@
 		B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgeTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		B1956A931D2E0E99002CE8AE /* ObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveC.h; sourceTree = "<group>"; };
 		B1956A941D2E0E99002CE8AE /* ObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC.m; sourceTree = "<group>"; };
-		B1956A961D2E0FFD002CE8AE /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
-		B1956A981D2E1058002CE8AE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		B1956A961D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowDoSwiftAPISeenTest.m; sourceTree = "<group>"; };
+		B1956A981D2E1058002CE8AE /* HowDoSwiftAPISeenTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HowDoSwiftAPISeenTest.h; sourceTree = "<group>"; };
 		B1956A9A1D2E283B002CE8AE /* by-protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-protocol.playground"; sourceTree = "<group>"; };
 		B1956A9C1D2E2871002CE8AE /* by-objc-bridgei.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "by-objc-bridgei.playground"; sourceTree = "<group>"; };
 		B1956A9D1D2E28C2002CE8AE /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -60,14 +60,13 @@
 		B1956A801D2E0E6A002CE8AE /* Objective-CBridgeTest */ = {
 			isa = PBXGroup;
 			children = (
+				B1956A9F1D2E2B75002CE8AE /* Other Files */,
 				B1956A9D1D2E28C2002CE8AE /* main.swift */,
 				B1956A901D2E0E74002CE8AE /* Swift.swift */,
 				B1956A931D2E0E99002CE8AE /* ObjectiveC.h */,
 				B1956A941D2E0E99002CE8AE /* ObjectiveC.m */,
-				B1956A981D2E1058002CE8AE /* Test.h */,
-				B1956A961D2E0FFD002CE8AE /* Test.m */,
-				B1956A851D2E0E6A002CE8AE /* Assets.xcassets */,
-				B1956A8A1D2E0E6A002CE8AE /* Info.plist */,
+				B1956A981D2E1058002CE8AE /* HowDoSwiftAPISeenTest.h */,
+				B1956A961D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m */,
 				B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */,
 			);
 			path = "Objective-CBridgeTest";
@@ -80,6 +79,15 @@
 				B1956A9C1D2E2871002CE8AE /* by-objc-bridgei.playground */,
 			);
 			name = Playgrounds;
+			sourceTree = "<group>";
+		};
+		B1956A9F1D2E2B75002CE8AE /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1956A851D2E0E6A002CE8AE /* Assets.xcassets */,
+				B1956A8A1D2E0E6A002CE8AE /* Info.plist */,
+			);
+			name = "Other Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1956A971D2E0FFD002CE8AE /* Test.m in Sources */,
+				B1956A971D2E0FFD002CE8AE /* HowDoSwiftAPISeenTest.m in Sources */,
 				B1956A9E1D2E28C2002CE8AE /* main.swift in Sources */,
 				B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */,
 				B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */,

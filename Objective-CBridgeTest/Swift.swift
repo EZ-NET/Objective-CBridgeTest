@@ -17,17 +17,14 @@ import Foundation
     }
 }
 
-// Swift 用のデータ構造は構造体で作る。
+/// Swift 用のデータ構造は構造体で作る。
+/// この Swift ネイティブな ChartFolder と、
+/// Objective-C ネイティブな ESChartFolder とをブリッジする。
 struct ChartFolder {
     
-    func open(patient: ESPatientDataObject) -> ChartFolder {
-        
-        // 以下、Objective-C Bridge を定義することで、ESChartFolder を ChartFolder にキャストできる。逆も可能。
-        return ESChartFolder() as ChartFolder
-    }
 }
 
-// Objective-C 用のデータ構造に、Swift 用のデータ構造からの変換イニシャライザを用意する。
+/// Objective-C 用のデータ構造に、Swift 用のデータ構造からの変換イニシャライザを用意する。
 private extension ESChartFolder {
     
     convenience init(_ source: ChartFolder) {
@@ -35,14 +32,14 @@ private extension ESChartFolder {
     }
 }
 
-// Swift 用のデータ構造に、Objective-C 用のデータ構造からの変換イニシャライザを用意する。
+/// Swift 用のデータ構造に、Objective-C 用のデータ構造からの変換イニシャライザを用意する。
 private extension ChartFolder {
     
     init(_ source: ESChartFolder) {
     }
 }
 
-// Swift の ChartFolder 構造体を Objective-C の ESChartFolder クラスと相互にブリッジできるようにする。
+/// Swift の ChartFolder 構造体を Objective-C の ESChartFolder クラスと相互にブリッジできるようにする。
 extension ChartFolder : _ObjectiveCBridgeable {
     
     typealias _ObjectiveCType = ESChartFolder
