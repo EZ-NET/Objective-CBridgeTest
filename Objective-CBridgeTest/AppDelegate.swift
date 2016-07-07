@@ -11,10 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+
+        let instance = ESTestInterface().foo as ChartFolder
+
+        print(instance)
+        ESTest.test()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

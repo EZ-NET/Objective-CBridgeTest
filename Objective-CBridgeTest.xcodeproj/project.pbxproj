@@ -11,6 +11,9 @@
 		B1956A841D2E0E6A002CE8AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A831D2E0E6A002CE8AE /* ViewController.swift */; };
 		B1956A861D2E0E6A002CE8AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1956A851D2E0E6A002CE8AE /* Assets.xcassets */; };
 		B1956A891D2E0E6A002CE8AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1956A871D2E0E6A002CE8AE /* Main.storyboard */; };
+		B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1956A901D2E0E74002CE8AE /* Swift.swift */; };
+		B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A941D2E0E99002CE8AE /* ObjectiveC.m */; };
+		B1956A971D2E0FFD002CE8AE /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B1956A961D2E0FFD002CE8AE /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,12 @@
 		B1956A851D2E0E6A002CE8AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1956A881D2E0E6A002CE8AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1956A8A1D2E0E6A002CE8AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1956A901D2E0E74002CE8AE /* Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
+		B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBridgeTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1956A931D2E0E99002CE8AE /* ObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveC.h; sourceTree = "<group>"; };
+		B1956A941D2E0E99002CE8AE /* ObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC.m; sourceTree = "<group>"; };
+		B1956A961D2E0FFD002CE8AE /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		B1956A981D2E1058002CE8AE /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +63,15 @@
 			children = (
 				B1956A811D2E0E6A002CE8AE /* AppDelegate.swift */,
 				B1956A831D2E0E6A002CE8AE /* ViewController.swift */,
+				B1956A901D2E0E74002CE8AE /* Swift.swift */,
+				B1956A931D2E0E99002CE8AE /* ObjectiveC.h */,
+				B1956A941D2E0E99002CE8AE /* ObjectiveC.m */,
+				B1956A981D2E1058002CE8AE /* Test.h */,
+				B1956A961D2E0FFD002CE8AE /* Test.m */,
 				B1956A851D2E0E6A002CE8AE /* Assets.xcassets */,
 				B1956A871D2E0E6A002CE8AE /* Main.storyboard */,
 				B1956A8A1D2E0E6A002CE8AE /* Info.plist */,
+				B1956A921D2E0E99002CE8AE /* Objective-CBridgeTest-Bridging-Header.h */,
 			);
 			path = "Objective-CBridgeTest";
 			sourceTree = "<group>";
@@ -95,6 +110,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 89282N6UM7;
 						DevelopmentTeamName = "EasyStyle G.K.";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1956A971D2E0FFD002CE8AE /* Test.m in Sources */,
 				B1956A841D2E0E6A002CE8AE /* ViewController.swift in Sources */,
+				B1956A951D2E0E99002CE8AE /* ObjectiveC.m in Sources */,
+				B1956A911D2E0E74002CE8AE /* Swift.swift in Sources */,
 				B1956A821D2E0E6A002CE8AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,11 +262,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Objective-CBridgeTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.Objective-CBridgeTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgeTest/Objective-CBridgeTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -256,11 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Objective-CBridgeTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ez-style.appid.Objective-CBridgeTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objective-CBridgeTest/Objective-CBridgeTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
